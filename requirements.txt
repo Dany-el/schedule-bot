@@ -1,2 +1,2 @@
-aiogram
-xlrd=1.2.0
+aiogram~=2.22.2
+xlrd~=1.2.0

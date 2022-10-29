@@ -86,7 +86,7 @@ async def send_week(message: types.Message):
         for j in range(0, worksheet.ncols):
             schedule += worksheet.cell_value(i, j) + "  "
         schedule += '\n'
-    await message.reply(f"*{schedule}*",disable_web_page_preview=True, parse_mode='Markdown')
+    await message.reply(f"*{schedule}*", disable_web_page_preview=True, parse_mode='Markdown')
 
 
 @dp.message_handler(commands=['day'])
@@ -120,7 +120,7 @@ async def send_day(message: types.Message):
                     forward = False
             if forward:
                 schedule += '\n'
-        await message.reply(f"*{schedule}*",disable_web_page_preview=True, parse_mode='Markdown')
+        await message.reply(f"*{schedule}*", disable_web_page_preview=True, parse_mode='Markdown')
     else:
         await message.reply("*You have a rest today!*", parse_mode='Markdown')
 
